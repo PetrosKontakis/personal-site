@@ -1,0 +1,681 @@
+@font-face {
+    font-family: scrollFont;
+    src: url(./assets/fonts/TektonPro-Regular.otf);
+}
+//
+@font-face {
+    font-family: mainFont;
+    src: url(./assets/fonts/ufonts.com_levenim-mt.woff);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-family: mainFont;
+    font-weight: 200;
+    font-size: 1.1em;
+    color: #7f7f7f;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+html, body { height: 100%; width: 100%; margin: 0; }
+
+/* ----text element   */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footertext {
+    font-size: 0.9em;
+}
+
+#authentication {
+    font-size: 0.7em;
+}
+
+.titles {
+    padding: 30px;
+}
+
+.textcontent {
+}
+
+.textaction {
+}
+
+/* text element ----  */
+/*---- svg images*/
+.svg {
+    overflow: auto;
+    fill: #0299cc;
+    width: 22vw;
+    height: 22vw;
+    min-width: 50px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 100px;
+}
+
+.svg:hover {
+    overflow: auto;
+    fill: #36b4e3;
+}
+
+/*svg image ----*/
+
+.midlevertical {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*----first intro*/
+
+#allmaintilte {
+    width: 100%;
+    overflow-y: visible;
+    height: 100%
+}
+
+.title-area {
+    margin: 0px;
+    padding-top: 5px;
+    font-family: Roboto;
+    font-size: 0.6em;
+}
+
+.contentbarleft {
+    display: inline;
+    float: left;
+    height: 15px;
+}
+
+.name {
+    font-size: 1.6em;
+}
+
+.about {
+    position: absolute;
+    font-size: 0.9em;
+    bottom: 10%;
+    left: 47%;
+}
+
+.intro {
+    padding-top: 5%;
+}
+
+#firstIntro {
+    position: relative;
+    z-index: -2;
+}
+
+#secondIntro {
+    overflow: visible;
+    opacity: 0;
+    height: 0;
+    position: relative;
+    z-index: -1;
+    top: -500px;
+}
+
+#mainAnim {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: visible;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#IntroAnims {
+    height: 100%;
+}
+
+#mylog {
+    padding-bottom: 20px;
+    position: absolute;
+}
+
+#paint {
+    overflow: hidden;
+    padding: 0px;
+    min-width: 100px;
+    max-width: 200px;
+    width: 40%;
+}
+
+#logo {
+    padding: 0px;
+    width: 15%;
+    top: 50px;
+    left: 45%;
+    min-width: 40px;
+    max-width: 80px;
+    position: absolute;
+}
+
+#footerintro {
+    background-color: #e9593a;
+    height: 5px;
+}
+
+/*first intro----*/
+/* ----whactOut element  */
+.whactOuttitle {
+    padding-top: 25px;
+}
+
+.whactOut {
+    overflow: hidden;
+    min-height: 300px;
+    background-color: #f2f2f2;
+    height: 50%;
+}
+
+.midleverticalsvg {
+    position: relative;
+    top: 18%;
+    -webkit-transform: translateY(-18%);
+    -ms-transform: translateY(-18%);
+    transform: translateY(-18%);
+}
+
+/* whactOut element----  */
+/* ----contact me element  */
+.contact {
+    overflow: hidden;
+    position: relative;
+    height: 70px;
+}
+
+#mailid {
+    height: 20px;
+}
+
+#mailIcon {
+    float: left;
+    padding: 15px;
+    padding-left: 30px;
+}
+
+#emailText {
+    float: left;
+    padding: 15px;
+    padding-right: 5px;
+}
+
+#mailbugs {
+    float: right;
+    padding-right: 20px;
+}
+
+#footer {
+    height: 5px;
+    background-color: #7aaf41;
+}
+
+#codeId {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    padding-top: 5px;
+    fill: #959595;
+    min-height: 15px;
+    min-width: 15px;
+}
+
+#codeId:hover {
+    fill: #36b4e3;
+}
+
+/* contact me element ----  */
+
+/* ----scroll-er element */
+#scroller {
+    position: fixed;
+    right: 0;
+    top: 45%;
+    margin-top: -2.5em;
+    padding-right: 20px;
+    list-style-type: none;
+    z-index: 100;
+    opacity: 0.5;
+}
+
+.bullet {
+    height: 12px;
+    width: 12px;
+    border-radius: 99px;
+    -webkit-border-radius: 99px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bullet:hover {
+    background-color: #97E1EB;
+}
+
+.bulletSpace {
+    height: 10px;;
+}
+
+#a {
+    background-color: #f59294;
+}
+
+#b {
+    background-color: #0299cc;
+}
+
+#c {
+    background-color: #7aaf41;
+}
+
+.scrollnum {
+    color: white;
+    vertical-align: middle;
+    font-family: scrollFont;
+}
+
+/* scroll-er element---- */
+
+/*---- My sea css objects  */
+.backgroundMarine {
+}
+
+.contentMarine {
+    position: relative;
+    z-index: 99;
+}
+
+.sea {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+#sea1 {
+    height: 50px;
+    opacity: 0.4;
+    background-color: #73CCE0;
+    z-index: 40;
+}
+
+#sea2 {
+    height: 70px;
+    opacity: 0.4;
+    background-color: #41A2C7;
+    z-index: 30;
+}
+
+#sea3 {
+    height: 90px;
+    opacity: 0.4;
+    background-color: #3B94B8;
+    z-index: 20;
+}
+
+#sea4 {
+    height: 100px;
+    opacity: 0.4;
+    background-color: #3789B1;
+    z-index: 10;
+}
+
+#island {
+    position: absolute;
+    z-index: 12;
+    bottom: 10px;
+    left: 5%;
+    max-width: 110px;
+    min-width: 90px;
+    width: 20vw;
+}
+
+#container {
+    position: absolute;
+    z-index: 21;
+    bottom: 0px;
+    left: 15%;
+    width: 7vw;
+    min-width: 43px;
+    max-width: 50px;
+}
+
+#passenger {
+    position: absolute;
+    z-index: 23;
+    bottom: 0px;
+    left: 65%;
+    width: 5vw;
+    min-width: 40px;
+    max-width: 43px;
+}
+
+.sun {
+    position: absolute;
+    z-index: 11;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.favoriteProject {
+    height: 100%;
+    max-height: 600px;
+    min-height: 350px;
+    background-color: #a9dff3;
+    position: relative;
+    overflow: hidden;
+}
+
+.favoriteTitle {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.favoritecontent {
+}
+
+#header {
+    height: 5px;
+    top: 0px;
+    background-color: #0299cc;
+}
+
+#idIcon {
+    position: inherit;
+}
+
+#lernmore {
+    position: absolute;
+    z-index: 60;
+    bottom: 15px;
+    color: white;
+    right: 25px;
+}
+
+/* My sea css objects ---- */
+
+#footerBugs {
+    background-color: #5d5d5d;
+    padding-top: 30px;
+    padding: 15px;
+}
+
+.footertextB {
+    font-size: 0.9em;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+    #scroller{
+        display: none;
+    }
+}
+
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-family:  mainFont;
+    font-weight: 200;
+    font-size: 1em;
+    color:#7f7f7f;
+    width: 100vw;
+    overflow-x:hidden;
+}
+html, body { height: 100%; width: 100%; margin: 0; }
+a{
+    text-decoration: none;
+    color:inherit;
+}
+/*-----sea*/
+#null{
+    height:0px;
+}
+#seadiv{
+    height: 100%;
+    width:100%;
+    max-height: 300px;
+    min-height: 250px;
+    background-color: #A9DFF3;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+
+}
+.backgroundMarine{
+
+}
+.contentMarine{
+    position:relative;
+    z-index:99;
+}
+.sea{
+    position:absolute;
+    width:100%;
+    bottom:0px;
+}
+#sea1{
+    height:50px;
+    opacity:0.4;
+    background-color: #73CCE0;
+    z-index:40;
+}
+#sea2{
+    height:70px;
+    opacity:0.4;
+    background-color: #41A2C7;
+    z-index:30;
+}
+#sea3{
+    height:90px;
+    opacity:0.4;
+    background-color: #3B94B8;
+    z-index:20;
+}
+#sea4{
+    height:100px;
+    opacity:0.4;
+    background-color: #3789B1;
+    z-index:10;
+}
+#island{
+    position:absolute;
+    z-index:12;
+    bottom:10px;
+    left:5%;
+    max-width: 110px;
+    min-width: 90px;
+    width: 20vw;
+}
+#container{
+    position:absolute;
+    z-index:21;
+    bottom:0px;
+    left:15%;
+    width: 7vw;
+    min-width: 43px;
+    max-width: 50px;
+}
+#passenger{
+    position:absolute;
+    z-index:23;
+    bottom:0px;
+    left:65%;
+    width: 5vw;
+    min-width: 40px;
+    max-width: 43px;
+}
+.sun{
+    position:absolute;
+    z-index:11;
+    height:600px;
+    left:0px;
+    bottom:0px;
+}
+.favoriteProject{
+    height: 100%;
+    max-height:600px;
+    min-height:350px;
+    background-color: #a9dff3;
+    position:relative;
+    overflow: hidden;
+}
+.favoriteTitle{
+    padding-top: 3%;
+    padding-bottom:3%;
+}
+.favoritecontent{
+
+}
+#header{
+    height:5px;
+    top:0px;
+
+}
+
+#lernmore{
+    position:absolute;
+    z-index:60;
+    bottom:15px;
+    color:white;
+    right:25px;
+}
+/*-----sea*/
+/* ----project div*/
+#idIcon{
+    position:inherit;
+    text-align:center;
+    font-size:1.2em;
+    padding:30px;
+}
+#icon{
+    min-width:100px;
+    min-height: 100px;
+    max-width:200px;
+    max-height: 200px;
+}
+#projecttitle{
+
+}
+
+#projectdescription{
+    padding-bottom:100px;
+    padding-top:30px;
+    padding-left:30px;
+    padding-right:30px;
+    text-align:left;
+    max-width: 750px;
+    margin: auto;
+}
+/* ----project div*/
+/* ----image div*/
+#imagepreview{
+    background-color:#5D5D5D;
+    min-height:400px;
+    height:100%;
+    max-height:600px;
+    position:relative;
+    overflow:hidden;
+}
+#imagetitle{
+    padding:20px;
+}
+#image{
+    position:relative;
+    height:100%
+}
+.image{
+    width: 100%;
+    max-width: 1000px;
+    min-width:500px;
+    position: absolute;
+    margin: auto;
+    top: -50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.arrow{
+    padding:50px;
+    width: 10vw;
+    min-width: 30px;
+    max-width: 60px;
+    opacity:0.1;
+}
+#leftarrow{
+    position:absolute;
+    left:0px;
+    top:35%;
+}
+
+
+#rightarrow{
+    position:absolute;
+    right:0px;
+    top:35%;
+}
+/* ----image div*/
+/* ----video div*/
+#videotitle{
+    text-align: left;
+}
+#videopreview{
+    padding-bottom:40px;
+    padding-top:30px;
+    position:relative;
+}
+#videoframe{
+    width: 100vw;
+    height: 56vw;
+    max-height: 350px;
+    max-width: 600px;
+    border: medium none;
+    padding-bottom:40px;
+    padding-top:40px;
+}
+#line{
+    height: 5px;
+    background-color: #7AAF41;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+/* ----video div*/
+/* ----download div*/
+#download{
+    padding-bottom:30px;
+    padding-top:30px;
+    background-color:#5D5D5D;
+}
+/* ----download div*/
+.svg {
+    overflow: auto;
+    fill: #0299CC;
+    width: 22vw;
+    height: 22vw;
+    min-width: 50px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 100px;
+}

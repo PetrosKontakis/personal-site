@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Petros Kontakis</title>
+    <meta name="viewport" content="width=device-width, user-scalable= no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+
+<body>
+
+
+<div id="allmaintilte">
+    <div id="mainAnim">
+        <div id="IntroAnims">
+            <div id="firstIntro">
+                <a class="name">Petros Kontakis</a>
+                <div class="intro" id="introid ">
+                    <a class="intro" id="introidText"> Welcome to my web site <br> I am a User Interface- Experience
+                        Designer & Developer for web and mobile apps</a>
+                </div>
+            </div>
+            <div id="secondIntro">
+                <div id="mylog">
+                    <img src="assets/images/paint.png" id="paint" alt="paint"></img>
+                    <img src="assets/images/logo.png" id="logo" alt="logo"/>
+                    <div id="moreAbout">
+                        <a style="font-size: 0.8em">I studied at the Department of Product & System Design Engineering
+                            Fields of interest are Human-Computer Interaction science, Information Systems, Virtual
+                            Reality and Computer Games</a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <a id="ButtonText" style="cursor: pointer;"> About ></a>
+    </div>
+    <div class="sea" id="footerintro"></div>
+</div>
+
+
+<div class="favoriteProject" id="favoriteProjectfid">
+    <div class="backgroundMarine">
+        <div class="sea" id="header"></div>
+        <img src="assets/images/island.svg" id="island" alt="paint" title="Syros Island"></img>
+        <img src="assets/images/cont.svg" id="container" alt="paint" title="Container Ship"></img>
+        <img src="assets/images/passenger.svg" id="passenger" alt="paint" title="Passenger Ship"></img>
+        <img src="assets/images/sun.svg" class="sun" id="sun1" alt="paint"></img>
+        <div class="sea" id="sea1"></div>
+        <div class="sea" id="sea2"></div>
+        <div class="sea" id="sea3"></div>
+        <div class="sea" id="sea4"></div>
+        <a class="textaction" id="lernmore" href="./AugmentedReality.html">Learn More...</a>
+    </div>
+    <div class="contentMarine">
+        <div class="favoriteTitle">
+            <a class="titles"> My Favorite Project</a>
+        </div>
+        <div id="idIcon">
+            <img src="assets/images/appicon.svg" id="icon" class="svg" alt="paint" title="Lern More"></img>
+            <div class="favoritecontent">
+                <a class="textcontent">Imagine the knowledge of sea in your hand </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="whactOut" id="whactOutid">
+    <div class="whactOuttitle">
+        <a class="titles"> Watch Out For More...</a>
+    </div>
+    <a class="midleverticalsvg" href="https://www.behance.net/PetrosKontakis" onclick="addhit('behance');"
+       target="_blank">
+        <img src="assets/images/behance.svg" class="svg" id="behanceIcon" alt="behance"/>
+    </a>
+    <a class="midleverticalsvg" href="https://www.facebook.com/petros.kontakis" onclick="addhit('facebook');"
+       target="_blank">
+        <img src="assets/images/facebook.svg" class="svg" id="facebookIcon" alt="facebook"/>
+    </a>
+    <a class="midleverticalsvg" href="http://gr.linkedin.com/in/petroskontakis" onclick="addhit('linkedin');"
+       target="_blank">
+        <img src="assets/images/linkedin.svg" class="svg" id="linkedinIcon" alt="linkedin"/>
+    </a>
+</div>
+
+<div class="contact">
+    <a class="midlevertical" id="mailIcon" href="mailto:petroskontakis@gmail.com?Subject=Hello%20Petros"
+       target="_top"><img src="assets/images/gmail.png" id="mailid" alt=""/></a>
+    <a class="midlevertical" id="emailText" href="mailto:petroskontakis@gmail.com?Subject=Hello%20Petros" target="_top">
+        <p class="footertext">petroskontakis@gmail.com</p></a>
+    <!--<a class="midlevertical" id = "mailbugs" href="mailto:petroskontakis@gmail.com?Subject=Bugs%20To%20Fixs" target="_top" title="Please sent me for bugs"><img src="assets/images/code.svg" class="svg" id="codeId" alt=""  /></a>-->
+    <div id="footer" class="sea"></div>
+
+</div>
+<div id="footerBugs">
+    <a class="footertextB"> Design and implementation by Petros kontakis.
+        Feel free to contact me for
+        <a class="footertextB" style="color:#7AAF41;" href="mailto:petroskontakis@gmail.com?Subject=Bugs%20To%20Fixs"
+           target="_top" title="Please send me for bugs">comments & problem reports. </a>
+    </a>
+
+</div>
+
+<!--
+    Scroll
+-->
+<div>
+    <ul id="scroller">
+        <li>
+            <div class="bullet" id="a" onclick="scroll(1)" style="cursor: pointer;">
+                <a class="scrollnum" id="at">1</a>
+            </div>
+        <li>
+            <div class="bulletSpace"></div>
+        <li>
+            <div class="bullet" id="b" onclick="scroll(2)" style="cursor: pointer;">
+                <a class="scrollnum" id="bt">2</a>
+            </div>
+        <li>
+            <div class="bulletSpace"></div>
+        <li>
+            <div class="bullet" id="c" onclick="scroll(3)" style="cursor: pointer;">
+                <a class="scrollnum" id="ct">3</a>
+            </div>
+    </ul>
+</div>
+
+
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>">
+</script>
+</body>
+
+</html>

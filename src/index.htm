@@ -10,39 +10,45 @@
 
 <body>
 
+<!--
+    First site section
+-->
+<div class="intro-container" id="allmaintilte">
 
-<div id="allmaintilte">
     <div id="mainAnim">
-        <div id="IntroAnims">
-            <div id="firstIntro">
-                <a class="name">Petros Kontakis</a>
-                <div class="intro" id="introid ">
-                    <a class="intro" id="introidText"> Welcome to my web site <br> I am a User Interface- Experience
-                        Designer & Developer for web and mobile apps</a>
-                </div>
+        <div id="firstIntro">
+            <p class="name">Petros Kontakis</p>
+            <p class="intro">
+                Welcome to my web site
+                <br>
+                I am a User Interface- Experience
+                Designer & Developer for web and mobile apps
+            </p>
+        </div>
+        <div id="secondIntro">
+            <div class="portrait-container">
+                <img src="assets/images/user_female_portrait.png"
+                     id="logo"
+                     class="portrait"
+                     alt="portrait"/>
             </div>
-            <div id="secondIntro">
-                <div id="mylog">
-                    <img src="assets/images/paint.png" id="paint" alt="paint"></img>
-                    <img src="assets/images/logo.png" id="logo" alt="logo"/>
-                    <div id="moreAbout">
-                        <a style="font-size: 0.8em">I studied at the Department of Product & System Design Engineering
-                            Fields of interest are Human-Computer Interaction science, Information Systems, Virtual
-                            Reality and Computer Games</a>
-                    </div>
-                </div>
-            
-            </div>
+            <p>
+                I studied at the Department of Product & System Design Engineering
+                Fields of interest are Human-Computer Interaction science, Information Systems, Virtual
+                Reality and Computer Games
+            </p>
         </div>
     </div>
-    <div class="about" id="about">
-        <a id="ButtonText" style="cursor: pointer;"> About ></a>
+    <div class="about">
+        <a id="ButtonText"> About ></a>
     </div>
-    <div class="sea" id="footerintro"></div>
+
 </div>
 
-
-<div class="favoriteProject" id="favoriteProjectfid">
+<!--
+    Second section favorite-project
+-->
+<div class="favorite-project" id="favoriteProjectfid">
     <div class="backgroundMarine">
         <div class="sea" id="header"></div>
         <img src="assets/images/island.svg" id="island" alt="paint" title="Syros Island"></img>
@@ -68,32 +74,49 @@
     </div>
 </div>
 
-
-<div class="whactOut" id="whactOutid">
-    <div class="whactOuttitle">
-        <a class="titles"> Watch Out For More...</a>
+<!--
+    watch out section
+-->
+<div class="watch-out">
+    <div class="title">
+        Watch Out For More..
     </div>
-    <a class="midleverticalsvg" href="https://www.behance.net/PetrosKontakis" onclick="addhit('behance');"
-       target="_blank">
-        <img src="assets/images/behance.svg" class="svg" id="behanceIcon" alt="behance"/>
-    </a>
-    <a class="midleverticalsvg" href="https://www.facebook.com/petros.kontakis" onclick="addhit('facebook');"
-       target="_blank">
-        <img src="assets/images/facebook.svg" class="svg" id="facebookIcon" alt="facebook"/>
-    </a>
-    <a class="midleverticalsvg" href="http://gr.linkedin.com/in/petroskontakis" onclick="addhit('linkedin');"
-       target="_blank">
-        <img src="assets/images/linkedin.svg" class="svg" id="linkedinIcon" alt="linkedin"/>
-    </a>
+    <div class="watch-out-links-container">
+        <a
+                href="https://www.behance.net/PetrosKontakis"
+                target="_blank">
+            <img src="assets/images/behance.svg"
+                 class="svg" alt="behance"/>
+        </a>
+        <a
+                href="https://www.facebook.com/petros.kontakis"
+                target="_blank">
+            <img src="assets/images/facebook.svg"
+                 class="svg" alt="facebook"/>
+        </a>
+        <a href="http://gr.linkedin.com/in/petroskontakis"
+           target="_blank">
+            <img src="assets/images/linkedin.svg"
+                 class="svg"
+                 alt="linkedin"/>
+        </a>
+    </div>
+
 </div>
 
 <div class="contact">
-    <a class="midlevertical" id="mailIcon" href="mailto:petroskontakis@gmail.com?Subject=Hello%20Petros"
-       target="_top"><img src="assets/images/gmail.png" id="mailid" alt=""/></a>
-    <a class="midlevertical" id="emailText" href="mailto:petroskontakis@gmail.com?Subject=Hello%20Petros" target="_top">
-        <p class="footertext">petroskontakis@gmail.com</p></a>
-    <!--<a class="midlevertical" id = "mailbugs" href="mailto:petroskontakis@gmail.com?Subject=Bugs%20To%20Fixs" target="_top" title="Please sent me for bugs"><img src="assets/images/code.svg" class="svg" id="codeId" alt=""  /></a>-->
-    <div id="footer" class="sea"></div>
+    <a
+
+            href="mailto:petroskontakis@gmail.com?Subject=Hello%20Petros"
+            target="_top">
+
+        <img src="assets/images/gmail.png" id="mailid" alt=""/>
+    </a>
+
+    <a
+            href="mailto:petroskontakis@gmail.com?Subject=Hello%20Petros"
+            target="_top">petroskontakis@gmail.com</a>
+
 
 </div>
 <div id="footerBugs">
@@ -126,6 +149,7 @@
             <div class="bullet" id="c" onclick="scroll(3)" style="cursor: pointer;">
                 <a class="scrollnum" id="ct">3</a>
             </div>
+        </li>
     </ul>
 </div>
 

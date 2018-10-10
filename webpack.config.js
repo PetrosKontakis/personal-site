@@ -8,7 +8,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-    entry: {main: "./src/index.js"},
+    entry: {main: "./src/index.js", augmentedReality: "./src/augmented-reality-marine-traffic/index.js"},
 
     output: {
         path: path.resolve(__dirname, "dist"),
@@ -76,8 +76,8 @@ module.exports = {
             filename: "index.html"
         }),
         new HtmlWebpackPlugin({
-            template: "./src/AugmentedReality.htm",
-            filename: "AugmentedReality.html"
+            template: "./src/augmented-reality-marine-traffic/index.htm",
+            filename: "augmented-reality-marine-traffic/index.html"
         }),
         new WebpackMd5Hash(),
         new webpack.ProvidePlugin({

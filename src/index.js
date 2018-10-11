@@ -282,7 +282,7 @@ import "./main.scss";
         });
     }
 
-    require("./components/marine-section/index");
+    // require("./components/marine-section/index");
 
 
 })();

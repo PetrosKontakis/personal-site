@@ -39,18 +39,8 @@ a {
   font-size: 0.9em;
 }
 
-#authentication {
-  font-size: 0.7em;
-}
-
 .titles {
   padding: 30px;
-}
-
-.textcontent {
-}
-
-.textaction {
 }
 
 /* text element ----  */
@@ -71,16 +61,6 @@ a {
   fill: #36b4e3;
 }
 
-/*svg image ----*/
-
-//.midlevertical {
-//  position: relative;
-//  top: 50%;
-//  -webkit-transform: translateY(-50%);
-//  -ms-transform: translateY(-50%);
-//  transform: translateY(-50%);
-//}
-
 .title-area {
   margin: 0px;
   padding-top: 5px;
@@ -88,11 +68,6 @@ a {
   font-size: 0.6em;
 }
 
-.contentbarleft {
-  display: inline;
-  float: left;
-  height: 15px;
-}
 
 .name {
   font-size: 1.6em;
@@ -141,8 +116,7 @@ a {
   }
 }
 
-/* whactOut element----  */
-/* ----contact me element  */
+
 .contact {
 
   position: relative;
@@ -155,21 +129,6 @@ a {
 
 }
 
-
-
-#codeId {
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  padding-top: 5px;
-  fill: #959595;
-  min-height: 15px;
-  min-width: 15px;
-}
-
-#codeId:hover {
-  fill: #36b4e3;
-}
 
 /* contact me element ----  */
 
@@ -195,14 +154,12 @@ a {
   border-width: 1px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .bullet:hover {
   background-color: #97E1EB;
-}
-
-.bulletSpace {
-  height: 10px;;
 }
 
 #a {
@@ -226,9 +183,6 @@ a {
 /* scroll-er element---- */
 
 /*---- My sea css objects  */
-.backgroundMarine {
-}
-
 .contentMarine {
   position: relative;
   z-index: 99;
@@ -342,6 +296,7 @@ a {
 
 .footertextB {
   font-size: 0.9em;
+  color:#7AAF41;
 }
 
 @media screen and (min-width: 0px) and (max-width: 700px) {

@@ -14,7 +14,6 @@
     First site section
 -->
 <div class="intro-container" id="allmaintilte">
-
     <div id="mainAnim">
         <div id="firstIntro">
             <p class="name">Petros Kontakis</p>
@@ -42,37 +41,16 @@
     <div class="about">
         <a id="ButtonText"> About ></a>
     </div>
-
 </div>
+
 
 <!--
+
     Second section favorite-project
+
+
 -->
-<div class="favorite-project" id="favoriteProjectfid">
-    <div class="backgroundMarine">
-        <div class="sea" id="header"></div>
-        <img src="assets/images/island.svg" id="island" alt="paint" title="Syros Island"></img>
-        <img src="assets/images/cont.svg" id="container" alt="paint" title="Container Ship"></img>
-        <img src="assets/images/passenger.svg" id="passenger" alt="paint" title="Passenger Ship"></img>
-        <img src="assets/images/sun.svg" class="sun" id="sun1" alt="paint"></img>
-        <div class="sea" id="sea1"></div>
-        <div class="sea" id="sea2"></div>
-        <div class="sea" id="sea3"></div>
-        <div class="sea" id="sea4"></div>
-        <a class="textaction" id="lernmore" href="/augmented-reality-marine-traffic">Learn More...</a>
-    </div>
-    <div class="contentMarine">
-        <div class="favoriteTitle">
-            <a class="titles"> My Favorite Project</a>
-        </div>
-        <div id="idIcon">
-            <img src="assets/images/appicon.svg" id="icon" class="svg" alt="paint" title="Lern More"></img>
-            <div class="favoritecontent">
-                <a class="textcontent">Imagine the knowledge of sea in your hand </a>
-            </div>
-        </div>
-    </div>
-</div>
+${require('./components/marine-section/index.htm')}
 
 <!--
     watch out section
@@ -82,47 +60,44 @@
         Watch Out For More..
     </div>
     <div class="watch-out-links-container">
-        <a
-                href="https://www.behance.net/PetrosKontakis"
-                target="_blank">
+        <a href="https://www.behance.net/PetrosKontakis"
+           target="_blank">
             <img src="assets/images/behance.svg"
                  class="svg" alt="behance"/>
         </a>
-        <a
-                href="https://www.facebook.com/petros.kontakis"
-                target="_blank">
+        <a href="https://www.facebook.com/petros.kontakis"
+           target="_blank">
             <img src="assets/images/facebook.svg"
                  class="svg" alt="facebook"/>
         </a>
         <a href="http://gr.linkedin.com/in/petroskontakis"
            target="_blank">
             <img src="assets/images/linkedin.svg"
-                 class="svg"
-                 alt="linkedin"/>
+                 class="svg" alt="linkedin"/>
         </a>
     </div>
 
 </div>
 
+<!--
+    Contact section
+-->
 <div class="contact">
-    <a
-
-            href="mailto:petroskontakis@gmail.com?Subject=Hello%20Petros"
-            target="_top">
-
+    <a href="mailto:petroskontakis@gmail.com?Subject=Hello%20Petros"
+       target="_top">
         <img src="assets/images/gmail.png" id="mailid" alt=""/>
     </a>
-
-    <a
-            href="mailto:petroskontakis@gmail.com?Subject=Hello%20Petros"
-            target="_top">petroskontakis@gmail.com</a>
-
-
+    <a href="mailto:petroskontakis@gmail.com?Subject=Hello%20Petros"
+       target="_top">petroskontakis@gmail.com</a>
 </div>
+
+<!--
+    footer
+-->
 <div id="footerBugs">
     <a class="footertextB"> Design and implementation by Petros kontakis.
         Feel free to contact me for
-        <a class="footertextB" style="color:#7AAF41;" href="mailto:petroskontakis@gmail.com?Subject=Bugs%20To%20Fixs"
+        <a class="footertextB" href="mailto:petroskontakis@gmail.com?Subject=Bugs%20To%20Fixs"
            target="_top" title="Please send me for bugs">comments & problem reports. </a>
     </a>
 
@@ -134,20 +109,18 @@
 <div>
     <ul id="scroller">
         <li>
-            <div class="bullet" id="a" onclick="scroll(1)" style="cursor: pointer;">
-                <a class="scrollnum" id="at">1</a>
+            <div class="bullet" id="a" onclick="scroll(1)">
+                <span class="scrollnum" id="at">1</span>
             </div>
+        </li>
         <li>
-            <div class="bulletSpace"></div>
-        <li>
-            <div class="bullet" id="b" onclick="scroll(2)" style="cursor: pointer;">
-                <a class="scrollnum" id="bt">2</a>
+            <div class="bullet" id="b" onclick="scroll(2)">
+                <span class="scrollnum" id="bt">2</span>
             </div>
+        </li>
         <li>
-            <div class="bulletSpace"></div>
-        <li>
-            <div class="bullet" id="c" onclick="scroll(3)" style="cursor: pointer;">
-                <a class="scrollnum" id="ct">3</a>
+            <div class="bullet" id="c" onclick="scroll(3)">
+                <span class="scrollnum" id="ct">3</span>
             </div>
         </li>
     </ul>

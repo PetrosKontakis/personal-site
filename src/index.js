@@ -28,7 +28,7 @@ import "./main.scss";
             setTimeout(function() {
                 divDimention();
                 positionscroller();
-                playSeaAnimation();
+                // playSeaAnimation();
                 //$("#test").text(count);
             }, 150);
         });
@@ -97,7 +97,10 @@ import "./main.scss";
         }
     }
     var isplaying=false;
+
+
     var drawis=0;
+
     function drawScroller(x){
         var a = "30px";
         var b = "20px";
@@ -168,37 +171,36 @@ import "./main.scss";
 
 
 
-	/*
-	 * Replace all SVG images with inline SVG
-	 */
-    jQuery('img.svg').each(function(){
-        var $img = jQuery(this);
-        var imgID = $img.attr('id');
-        var imgClass = $img.attr('class');
-        var imgURL = $img.attr('src');
-
-        jQuery.get(imgURL, function(data) {
-            // Get the SVG tag, ignore the rest
-            var $svg = jQuery(data).find('svg');
-
-            // Add replaced image's ID to the new SVG
-            if(typeof imgID !== 'undefined') {
-                $svg = $svg.attr('id', imgID);
-            }
-            // Add replaced image's classes to the new SVG
-            if(typeof imgClass !== 'undefined') {
-                $svg = $svg.attr('class', imgClass+' replaced-svg');
-            }
-
-            // Remove any invalid XML tags as per http://validator.w3.org
-            $svg = $svg.removeAttr('xmlns:a');
-
-            // Replace image with new SVG
-            $img.replaceWith($svg);
-
-        }, 'xml');
-
-    });
+    // /*
+	 // * Replace all SVG images with inline SVG
+	 // */
+    // jQuery('img.svg').each(function(){
+    //     var $img = jQuery(this);
+    //     var imgID = $img.attr('id');
+    //     var imgClass = $img.attr('class');
+    //     var imgURL = $img.attr('src');
+    //
+    //     jQuery.get(imgURL, function(data) {
+    //         // Get the SVG tag, ignore the rest
+    //         var $svg = jQuery(data).find('svg');
+    //
+    //         // Add replaced image's ID to the new SVG
+    //         if(typeof imgID !== 'undefined') {
+    //             $svg = $svg.attr('id', imgID);
+    //         }
+    //         // Add replaced image's classes to the new SVG
+    //         if(typeof imgClass !== 'undefined') {
+    //             $svg = $svg.attr('class', imgClass+' replaced-svg');
+    //         }
+    //
+    //         // Remove any invalid XML tags as per http://validator.w3.org
+    //         $svg = $svg.removeAttr('xmlns:a');
+    //
+    //         // Replace image with new SVG
+    //         $img.replaceWith($svg);
+    //
+    //     }, 'xml');
+    // });
 
 	/*
 	 * Awesome Intro
@@ -280,72 +282,7 @@ import "./main.scss";
         });
     }
 
-//Favorite project
-
-    $("#icon").hover(function(){
-        $("#sun").animate({
-            'top': '-25'
-        }, 100, function(){});
-    },function(){
-        $("#sun").animate({
-            'top': '10%',
-
-        }, 100, function(){});
-    });
-
-//wave
-    $("#island").click(function(){
-        playSeaAnimation();
-    });
-    $("#passenger").click(function(){
-        playSeaAnimation();
-    });
-    $("#container").click(function(){
-        playSeaAnimation();
-    });
-    function playSeaAnimation(){
-
-        if (animationIsPlaying==false){
-            seaAnimationFinish();
-            seaAnimation();
-        }
-    }
-    var animationIsPlaying=false;
-    function seaAnimation (){
-        animationIsPlaying=true;
-        $("#island").animate({bottom:"-=30px"},500).animate({bottom:"+=40px"}, 1000,function(){animationStop();}).animate({bottom:"-=20px"}, 1000).animate({bottom:"+=10px"}, 1000).animate({bottom:"-=5px"}, 1000).animate({bottom:"+=5px"}, 1000).animate({bottom:"-=2px"}, 1000).animate({bottom:"+=2px"}, 1000)
-        $("#sea3").animate({height:"+=10px"},1000).animate({height:"-=20px"}, 1000).animate({height:"+=20px"}, 1000).animate({height:"-=10px"}, 1000).animate({height:"+=7px"}, 1000).animate({height:"-=7px"}, 1000).animate({height:"+=4px"}, 1000).animate({height:"-=4px"}, 1000)
-        $("#passenger").animate({bottom:"+=10px"},500).animate({bottom:"-=20px"}, 1000).animate({bottom:"+=20px"}, 1000).animate({bottom:"-=10px"}, 1000).animate({bottom:"+=5px"}, 1000).animate({bottom:"-=5px"}, 1000).animate({bottom:"+=2px"}, 1000).animate({bottom:"-=2px"}, 1000)
-        $("#sea2").animate({height:"-=5px"},1000).animate({height:"+=10px"}, 1000).animate({height:"-=10px"}, 1000).animate({height:"+=5px"}, 1000).animate({height:"-=3px"}, 1000).animate({height:"+=3px"}, 1000)
-        $("#container").animate({bottom:"-=10px"},500).animate({bottom:"+=20px"}, 1000).animate({bottom:"-=20px"}, 1000).animate({bottom:"+=10px"}, 1000).animate({bottom:"-=3px"}, 1000).animate({bottom:"+=3px"}, 1000)
-        $("#sea4").animate({height:"-=5px"},1000).animate({height:"+=10px"}, 1000).animate({height:"-=10px"}, 1000).animate({height:"+=5px"}, 1000)
-        $("#sea1").animate({height:"+=3px"},1000).animate({height:"-=6px"}, 1000).animate({height:"+=6px"}, 1000).animate({height:"-=3px"}, 1000)
-    }
-    function seaAnimationFinish(){
-        $("#island").finish();
-        $("#sea3").finish();
-        $("#passenger").finish();
-        $("#sea2").finish();
-        $("#container").finish();
-        $("#sea4").finish();
-        $("#sea1").finish();
-    }
-    function animationStop(){
-        animationIsPlaying=false;
-    }
-
-
-    function addhit(element) {
-        // $.ajax({
-        //      type: "POST",
-        //      url: './php/index.php',
-        //      data:{action:element},
-        //      success:function(html) {
-        //        //alert(html);
-        //      }
-        //
-        // });
-    }
+    require("./components/marine-section/index");
 
 
 })();

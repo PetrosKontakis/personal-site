@@ -20,6 +20,15 @@ module.exports = {
     },
     module: {
         rules: [
+            { test: /\.(htm)$/,
+                include: path.join(__dirname, 'src/components'),
+                use: {
+                    loader: 'html-loader',
+                    options: {
+                        interpolate: true
+                    }
+                }
+            },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,

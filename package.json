@@ -42,5 +42,8 @@
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4",
     "webpack-md5-hash": "^0.0.6"
+  },
+  "devDependencies": {
+    "html-loader": "^0.5.5"
   }
 }

@@ -1,0 +1,251 @@
+@font-face {
+    font-family: mainFont;
+    src: url(../font/ufonts.com_levenim-mt.woff);
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-family:  mainFont;
+	font-weight: 200;
+    font-size: 1em;
+	color:#7f7f7f;
+    width: 100vw;
+	overflow-x:hidden;
+}
+html, body { height: 100%; width: 100%; margin: 0; }
+a{ 
+	text-decoration: none;
+	color:inherit;
+}
+/*-----sea*/
+#null{
+	height:0px;
+}
+#seadiv{
+	height: 100%;
+	width:100%;
+	max-height: 300px;
+	min-height: 250px;
+	background-color: #A9DFF3;
+	position: relative;
+	overflow: hidden;
+	z-index: 100;
+	
+	}
+	.backgroundMarine{
+
+	}
+	.contentMarine{
+	position:relative;
+	z-index:99;
+	}
+	.sea{
+	position:absolute;
+	width:100%;
+	bottom:0px;
+	}
+	#sea1{
+	height:50px;
+	opacity:0.4;
+	background-color: #73CCE0;
+	z-index:40;
+	}
+	#sea2{
+	height:70px;
+	opacity:0.4;
+	background-color: #41A2C7;
+	z-index:30;
+	}
+	#sea3{
+	height:90px;
+	opacity:0.4;
+	background-color: #3B94B8;
+	z-index:20;
+	}
+	#sea4{
+	height:100px;
+	opacity:0.4;
+	background-color: #3789B1;
+	z-index:10;
+	}
+	#island{
+	position:absolute;
+	z-index:12;
+	bottom:10px;
+	left:5%;
+	max-width: 110px;
+	min-width: 90px;
+	width: 20vw;
+	}
+	#container{
+	position:absolute;
+	z-index:21;
+	bottom:0px;
+	left:15%;
+	width: 7vw;
+	min-width: 43px;
+	max-width: 50px;
+	}
+	#passenger{
+	position:absolute;
+	z-index:23;
+	bottom:0px;
+	left:65%;
+	width: 5vw;
+	min-width: 40px;
+	max-width: 43px;
+	}
+	.sun{
+	position:absolute;
+	z-index:11;
+	height:600px;
+	left:0px;
+	bottom:0px;
+	}
+	.favoriteProject{
+	height: 100%;
+	max-height:600px;
+	min-height:350px;
+	background-color: #a9dff3;
+	position:relative;
+	overflow: hidden;
+	}
+	.favoriteTitle{
+	padding-top: 3%;
+	padding-bottom:3%;
+	}
+	.favoritecontent{
+	
+	}
+	#header{
+	height:5px;
+	top:0px;
+
+	}
+	
+	#lernmore{
+	position:absolute;
+	z-index:60;
+	bottom:15px;
+	color:white;
+	right:25px;
+	}
+/*-----sea*/
+/* ----project div*/
+#idIcon{
+	position:inherit;
+	text-align:center;
+	font-size:1.2em;
+	padding:30px;
+}
+#icon{
+	min-width:100px;
+	min-height: 100px;
+	max-width:200px;
+	max-height: 200px;
+}
+#projecttitle{
+	
+}
+
+#projectdescription{
+	padding-bottom:100px;
+	padding-top:30px;
+	padding-left:30px;
+	padding-right:30px;
+	text-align:left;
+	max-width: 750px;
+	margin: auto;
+}
+/* ----project div*/
+/* ----image div*/
+#imagepreview{
+	background-color:#5D5D5D;
+	min-height:400px;
+	height:100%;
+	max-height:600px;
+	position:relative;
+	overflow:hidden;
+}
+#imagetitle{
+padding:20px;
+}
+#image{
+	position:relative;
+	height:100%
+}
+.image{
+	width: 100%;
+	max-width: 1000px;
+	min-width:500px;
+	position: absolute;
+	margin: auto;
+	top: -50px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+.arrow{
+	padding:50px;
+	width: 10vw;
+	min-width: 30px;
+	max-width: 60px;
+	opacity:0.1;
+}
+#leftarrow{
+	position:absolute;
+	left:0px;
+	top:35%;
+}
+#rightarrow{
+	position:absolute;
+	right:0px;
+	top:35%;
+}
+/* ----image div*/
+/* ----video div*/
+#videotitle{
+text-align: left;
+}
+#videopreview{
+	padding-bottom:40px;
+	padding-top:30px;
+	position:relative;
+}
+#videoframe{
+	width: 100vw;
+	height: 56vw;
+	max-height: 350px;
+	max-width: 600px;
+	border: medium none;
+	padding-bottom:40px;
+	padding-top:40px;
+}
+#line{
+height: 5px;
+background-color: #7AAF41;
+position: absolute;
+width: 100%;
+bottom: 0px;
+}
+/* ----video div*/
+/* ----download div*/
+#download{
+padding-bottom:30px;
+padding-top:30px;
+background-color:#5D5D5D;
+}
+/* ----download div*/
+.svg {
+    overflow: auto;
+    fill: #0299CC;
+    width: 22vw;
+    height: 22vw;
+    min-width: 50px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 100px;
+}
